@@ -146,6 +146,7 @@ void main()
 	vec2 p0 = vScreenCoord.xy;
 	vec2 p1 = uLinePoints.xy;
 	vec2 p2 = uLinePoints.zw;
+
 	float dist = 
 		abs((p2.x - p1.x)*(p1.y - p0.y) - (p1.x - p0.x)*(p2.y - p1.y)) /
 		sqrt((p2.x - p1.x)*(p2.x - p1.x) + (p2.y - p1.y)*(p2.y - p1.y));
